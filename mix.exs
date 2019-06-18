@@ -4,7 +4,7 @@ defmodule Sparkline.Mixfile do
   def project do
     [
       app: :sparkline,
-      version: "0.1.0",
+      version: "0.2.0",
       elixir: "~> 1.4",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
@@ -33,9 +33,9 @@ defmodule Sparkline.Mixfile do
     [
       name: :sparkline,
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
-      maintainers: ["Meltwater Group"],
+      maintainers: ["@mykola"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/meltwater/sparkline"}
+      links: %{"GitHub" => "https://github.com/mbilokonsky/sparkline"}
     ]
   end
 end
