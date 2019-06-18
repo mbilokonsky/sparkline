@@ -39,7 +39,7 @@ defmodule Sparkline do
     values = opts[:values].(data) |> Enum.map(&ensure_float/1)
     bars = opts[:spark_bars]
 
-    {min, max} = Enum.min_max(values)
+    {min, max} = options[:minmax] || Enum.min_max(values)
     step = (max - min) / (length(bars) - 1)
     steps = seq(min, max - step, step)
 
